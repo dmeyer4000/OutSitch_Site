@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OutSwitch Privacy Policy</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark: #0D1A10;
+      --mint: #3EEEA0;
+      --gray: #6B7280;
+      --gray-light: #9CA3AF;
+      --text: #111827;
+      --text-muted: #4B5563;
+      --bg: #FFFFFF;
+      --border: #E5E7EB;
+      --section-bg: #F9FAFB;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --text: #E8F5EC;
+        --text-muted: #9CA3AF;
+        --bg: #0D1A10;
+        --border: #1E3A26;
+        --section-bg: #152218;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --text: #E8F5EC;
+      --text-muted: #9CA3AF;
+      --bg: #0D1A10;
+      --border: #1E3A26;
+      --section-bg: #152218;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      font-weight: 300;
+      padding: 0 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 28px 0;
+      margin-bottom: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wordmark {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--mint);
+      text-decoration: none;
+    }
+
+    .back-link {
+      font-size: 0.875rem;
+      color: var(--gray);
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: var(--mint);
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .doc-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 2.25rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .doc-meta {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      color: var(--text-muted);
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--mint);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .callout {
+      background: var(--section-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 32px 0;
+      font-size: 0.9375rem;
+    }
+
+    .callout strong {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 56px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="/index.html">OutSwitch</a>
+    <a class="back-link" href="/index.html">← Back</a>
+  </header>
+
+  <div class="content">
+    <h1 class="doc-title">Privacy Policy</h1>
+    <p class="doc-meta">Effective date: September 17, 2026 &nbsp;·&nbsp; Last updated: September 17, 2026</p>
+
+    <div class="callout">
+      <strong>The short version:</strong> OutSwitch connects to your workplace tools (Slack, Google, Microsoft, WhatsApp) to toggle your Out of Office status on your behalf. We store only what we need to do that job. We do not sell your data, advertise to you, or share your information with third parties except the services you explicitly connect.
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>OutSwitch is a mobile application developed by Dan Meyer (<a href="mailto:dan@outswitch.ai">dan@outswitch.ai</a>). When we say "OutSwitch," "we," "us," or "our," we mean the app and its developer.</p>
+
+    <h2>2. What information we collect</h2>
+    <p>We collect the minimum information necessary to operate OutSwitch:</p>
+    <ul>
+      <li><strong>Account information:</strong> Your email address, used to identify your account.</li>
+      <li><strong>OAuth access tokens:</strong> When you connect a third-party service (Slack, Google, Microsoft, WhatsApp), that service issues OutSwitch an access token. We store this token so OutSwitch can toggle your Out of Office status on your behalf without requiring you to re-authorize each time.</li>
+      <li><strong>Out of Office settings:</strong> Your OOO message text, return date (if set), and which integrations are active.</li>
+      <li><strong>Usage data:</strong> Basic logs of when your OOO status was toggled, used for reliability and debugging. This data is not shared.</li>
+    </ul>
+
+    <h2>3. How we use your information</h2>
+    <p>We use the information we collect solely to provide and improve OutSwitch:</p>
+    <ul>
+      <li>To toggle your Out of Office status across connected platforms when you activate or deactivate it in the app.</li>
+      <li>To restore your previous status when your Out of Office period ends.</li>
+      <li>To operate and maintain the OutSwitch backend service.</li>
+      <li>To diagnose and fix technical problems.</li>
+    </ul>
+    <p>We do not use your information for advertising, profiling, or any purpose unrelated to operating OutSwitch.</p>
+
+    <h2>4. Third-party services</h2>
+    <p>OutSwitch integrates with the following third-party platforms at your direction. Each has its own privacy policy governing how they handle your data:</p>
+    <ul>
+      <li><strong>Slack</strong> — <a href="https://slack.com/privacy-policy" target="_blank">slack.com/privacy-policy</a></li>
+      <li><strong>Google Workspace</strong> — <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+      <li><strong>Microsoft 365</strong> — <a href="https://privacy.microsoft.com" target="_blank">privacy.microsoft.com</a></li>
+      <li><strong>WhatsApp Business API</strong> — <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">whatsapp.com/legal/privacy-policy</a></li>
+    </ul>
+    <p>OutSwitch only accesses these services with the permissions you explicitly grant during the connection flow, and only acts on your behalf when you activate or deactivate your Out of Office status.</p>
+
+    <h2>5. Data storage and security</h2>
+    <p>Your data is stored on Railway (railway.com), a cloud infrastructure provider based in the United States. Data is stored in a PostgreSQL database. We use industry-standard practices including encrypted connections (TLS) and environment-variable-based secret management.</p>
+    <p>OAuth tokens are stored encrypted and are never included in app binaries or source code repositories.</p>
+
+    <h2>6. Data retention</h2>
+    <p>We retain your account data for as long as your account is active. If you delete your account or request deletion, we will remove your personal information and OAuth tokens within 30 days.</p>
+
+    <h2>7. Your rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal information we hold about you.</li>
+      <li>Request correction of inaccurate information.</li>
+      <li>Request deletion of your account and associated data.</li>
+      <li>Revoke OutSwitch's access to any connected platform at any time through that platform's own settings.</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:dan@outswitch.ai">dan@outswitch.ai</a>.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>OutSwitch is not directed at children under 13. We do not knowingly collect personal information from anyone under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this Privacy Policy as OutSwitch evolves. If we make material changes, we will update the "Last updated" date at the top of this page. Continued use of OutSwitch after a change constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions about this policy or your data? Email us at <a href="mailto:dan@outswitch.ai">dan@outswitch.ai</a>.</p>
+
+    <hr class="divider">
+
+    <footer>
+      OutSwitch &nbsp;·&nbsp; <a href="/index.html">outswitch.ai</a> &nbsp;·&nbsp; <a href="mailto:dan@outswitch.ai">dan@outswitch.ai</a>
+    </footer>
+  </div>
+</body>
+</html>

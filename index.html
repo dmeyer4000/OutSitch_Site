@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OutSwitch</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark: #0D1A10;
+      --dark-2: #152218;
+      --mint: #3EEEA0;
+      --mint-dim: #2BC880;
+      --gray: #6B7280;
+      --gray-light: #9CA3AF;
+      --text: #E8F5EC;
+      --bg: #0D1A10;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .wordmark {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 3rem;
+      font-weight: 400;
+      color: var(--mint);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .tagline-small {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 56px;
+    }
+
+    .headline {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text);
+      text-wrap: balance;
+      margin-bottom: 20px;
+    }
+
+    .headline em {
+      color: var(--mint);
+      font-style: italic;
+    }
+
+    .body-text {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--gray-light);
+      max-width: 420px;
+      margin: 0 auto 48px;
+      text-wrap: balance;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--dark-2);
+      border: 1px solid #1E3A26;
+      border-radius: 100px;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--gray-light);
+      margin-bottom: 48px;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--mint);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    .platforms {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .platform-tag {
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: var(--gray);
+      background: transparent;
+      border: 1px solid #1E3A26;
+      border-radius: 6px;
+      padding: 5px 12px;
+    }
+
+    .footer-links {
+      font-size: 0.8125rem;
+      color: var(--gray);
+    }
+
+    .footer-links a {
+      color: var(--gray);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover {
+      color: var(--mint);
+    }
+
+    .footer-links span {
+      margin: 0 8px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wordmark">OutSwitch</div>
+    <div class="tagline-small">Coming Soon</div>
+
+    <h1 class="headline">One tap turns on your <em>Out of Office</em> everywhere</h1>
+
+    <p class="body-text">
+      Slack. Microsoft Teams. Google. WhatsApp. All updated the moment you leave — and restored the moment you're back.
+    </p>
+
+    <div class="pill">
+      <span class="dot"></span>
+      Currently in development
+    </div>
+
+    <div class="platforms">
+      <span class="platform-tag">Slack</span>
+      <span class="platform-tag">Microsoft Teams</span>
+      <span class="platform-tag">Google</span>
+      <span class="platform-tag">WhatsApp</span>
+      <span class="platform-tag">iMessage</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <span>·</span>
+      <a href="mailto:dan@outswitch.ai">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
