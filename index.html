@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OutSwitch</title>
+  <title>OutSwitch — One tap Out of Office for all your apps</title>
+  <meta name="description" content="OutSwitch is a mobile app that lets you activate your Out of Office status across Slack, Google, Microsoft Teams, and WhatsApp with a single tap.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,9 +20,7 @@
       --bg: #0D1A10;
     }
 
-    html, body {
-      height: 100%;
-    }
+    html, body { height: 100%; }
 
     body {
       background: var(--bg);
@@ -35,11 +34,7 @@
       padding: 48px 24px;
     }
 
-    .container {
-      max-width: 560px;
-      width: 100%;
-      text-align: center;
-    }
+    .container { max-width: 580px; width: 100%; text-align: center; }
 
     .wordmark {
       font-family: 'Instrument Serif', Georgia, serif;
@@ -70,20 +65,56 @@
       margin-bottom: 20px;
     }
 
-    .headline em {
-      color: var(--mint);
-      font-style: italic;
-    }
+    .headline em { color: var(--mint); font-style: italic; }
 
     .body-text {
       font-size: 1rem;
       font-weight: 300;
       line-height: 1.7;
       color: var(--gray-light);
-      max-width: 420px;
-      margin: 0 auto 48px;
+      max-width: 460px;
+      margin: 0 auto 24px;
       text-wrap: balance;
     }
+
+    .how-it-works {
+      background: #152218;
+      border: 1px solid #1E3A26;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 32px auto 36px;
+      text-align: left;
+      max-width: 480px;
+    }
+
+    .how-it-works h2 {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mint);
+      margin-bottom: 16px;
+    }
+
+    .step { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; }
+    .step:last-child { margin-bottom: 0; }
+
+    .step-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #1E3A26;
+      color: var(--mint);
+      font-size: 0.75rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-text { font-size: 0.9375rem; font-weight: 300; color: var(--gray-light); line-height: 1.5; }
 
     .pill {
       display: inline-flex;
@@ -96,7 +127,7 @@
       font-size: 0.875rem;
       font-weight: 400;
       color: var(--gray-light);
-      margin-bottom: 48px;
+      margin-bottom: 32px;
     }
 
     .dot {
@@ -115,9 +146,9 @@
     .platforms {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 56px;
+      margin-bottom: 48px;
     }
 
     .platform-tag {
@@ -130,25 +161,10 @@
       padding: 5px 12px;
     }
 
-    .footer-links {
-      font-size: 0.8125rem;
-      color: var(--gray);
-    }
-
-    .footer-links a {
-      color: var(--gray);
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-
-    .footer-links a:hover {
-      color: var(--mint);
-    }
-
-    .footer-links span {
-      margin: 0 8px;
-      opacity: 0.4;
-    }
+    .footer-links { font-size: 0.8125rem; color: var(--gray); }
+    .footer-links a { color: var(--gray); text-decoration: none; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--mint); }
+    .footer-links span { margin: 0 8px; opacity: 0.4; }
   </style>
 </head>
 <body>
@@ -159,8 +175,24 @@
     <h1 class="headline">One tap turns on your <em>Out of Office</em> everywhere</h1>
 
     <p class="body-text">
-      Slack. Microsoft Teams. Google. WhatsApp. All updated the moment you leave — and restored the moment you're back.
+      OutSwitch is a mobile app that connects to your workplace communication tools and lets you activate or deactivate your Out of Office status across all of them at once — with a single tap.
     </p>
+
+    <div class="how-it-works">
+      <h2>How it works</h2>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">Connect your accounts — Slack, Google Workspace, Microsoft 365, and WhatsApp — once during setup.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">When you're heading out, tap the OutSwitch button. Your Out of Office status is set everywhere instantly.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">Set a return date and OutSwitch automatically turns everything off when you're back — no action needed.</div>
+      </div>
+    </div>
 
     <div class="pill">
       <span class="dot"></span>
@@ -170,13 +202,15 @@
     <div class="platforms">
       <span class="platform-tag">Slack</span>
       <span class="platform-tag">Microsoft Teams</span>
-      <span class="platform-tag">Google</span>
+      <span class="platform-tag">Google Workspace</span>
       <span class="platform-tag">WhatsApp</span>
       <span class="platform-tag">iMessage</span>
     </div>
 
     <div class="footer-links">
       <a href="/privacy.html">Privacy Policy</a>
+      <span>·</span>
+      <a href="/terms.html">Terms of Service</a>
       <span>·</span>
       <a href="mailto:dan@outswitch.ai">Contact</a>
     </div>
